@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+$config['jwt_key'] = 'jwt_key_for_vateren';
+$config['jwt_algorithm'] = 'HS256';
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -100,7 +104,7 @@ $config['charset'] = 'UTF-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = true;
 
 /*
 |--------------------------------------------------------------------------
